@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organograma</title>
+    <style>
+        .org-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .level {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .box {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 0 10px;
+            text-align: center;
+            width: 150px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+        .line {
+            border-left: 1px solid #000;
+            height: 20px;
+            width: 0;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="org-chart">
+        <!-- Primeiro nível -->
+        <div class="level">
+            <div class="box">Aristides Placido Neto<br>Gerente de Logística</div>
+            <div class="box">Donizete Itavar<br>Gerente de Filial</div>
+        </div>
+        <!-- Linha de conexão para o segundo nível -->
+        <div class="line"></div>
+        <!-- Segundo nível -->
+        <div class="level">
+            <div class="box">Arivaldo Arlindo<br>Coordenador de Operações</div>
+        </div>
+        <!-- Linha de conexão para o terceiro nível -->
+        <div class="line"></div>
+        <!-- Terceiro nível -->
+        <div class="level">
+            <div class="box">Almir Ribeiro<br>Supervisor de Logística</div>
+            <div class="box">Josimar Santos Silva<br>Supervisor de Logística</div>
+        </div>
+        <!-- Linha de conexão para o quarto nível -->
+        <div class="line"></div>
+        <!-- Quarto nível -->
+        <div class="level">
+            <!-- Renan, que se reporta diretamente ao Arivaldo -->
+            <div class="box">Renan<br>Analista de Logística</div>
+        </div>
+        <div class="line"></div>
+        <!-- Quinto nível -->
+        <div class="level">
+            <!-- Assistentes abaixo de Almir -->
+            <div class="box">Alex Rocha de Souza<br>Assistente de Estoque Jr</div>
+            <div class="box">Daniel Alves Siqueira<br>Assistente de Estoque Pl</div>
+            <div class="box">Evandro Siqueira Pinto<br>Assistente de Estoque Pl</div>
+            <div class="box">Felipe dos Santos Pessoa<br>Assistente de Estoque Jr</div>
+            <div class="box">Gustavo Henrique Bottoni Barbosa<br>Assistente de Estoque Jr</div>
+            <div class="box">Marcos Vinicius Coutinho Pereira<br>Repositor</div>
+        </div>
+        <!-- Linha de conexão para o sexto nível -->
+        <div class="line"></div>
+        <!-- Sexto nível -->
+        <div class="level">
+            <!-- Assistentes abaixo de Josimar -->
+            <div class="box">Alberto Gustavo Valcher Jr<br>Operador Empilhadeira Jr</div>
+            <div class="box">Bruno Lopes Loureiro<br>Operador Empilhadeira Jr</div>
+            <div class="box">Carlos Eduardo Lima dos Santos<br>Assistente de Estoque Jr</div>
+            <div class="box">Camila<br>Assistente de Estoque Jr</div>
+            <div class="box">Daniel da Silva Paterlini<br>Assistente de Estoque Jr</div>
+            <div class="box">Derivaldo de Souza da Silva<br>Assistente de Estoque Jr</div>
+            <div class="box">Geovana da Silva Miranda<br>Assistente de Estoque Jr</div>
+        </div>
+    </div>
+</body>
+</html>
